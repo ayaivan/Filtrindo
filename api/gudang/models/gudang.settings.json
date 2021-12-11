@@ -22,6 +22,14 @@
     },
     "hp": {
       "type": "string"
+    },
+    "mutasi_stoks": {
+      "via": "gudangs",
+      "collection": "mutasi-stok"
+    },
+    "detail_gudang": {
+      "via": "gudangs",
+      "model": "detail-stok-barang"
     }
   }
 }

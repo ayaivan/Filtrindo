@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "detail_stok_barangs",
+  "info": {
+    "name": "Detail Stok Barang"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "barang": {
+      "model": "barang",
+      "via": "detail_gudang"
+    },
+    "gudangs": {
+      "collection": "gudang",
+      "via": "detail_gudang"
+    },
+    "Detail": {
+      "type": "json"
+    }
+  }
+}

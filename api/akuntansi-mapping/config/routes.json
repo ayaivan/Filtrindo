@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/akuntansi-mappings",
+      "handler": "akuntansi-mapping.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/akuntansi-mappings/count",
+      "handler": "akuntansi-mapping.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/akuntansi-mappings/:id",
+      "handler": "akuntansi-mapping.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/akuntansi-mappings",
+      "handler": "akuntansi-mapping.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/akuntansi-mappings/:id",
+      "handler": "akuntansi-mapping.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/akuntansi-mappings/:id",
+      "handler": "akuntansi-mapping.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

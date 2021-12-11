@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/buku-besars",
+      "handler": "buku-besar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/buku-besars/count",
+      "handler": "buku-besar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/buku-besars/:id",
+      "handler": "buku-besar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/buku-besars",
+      "handler": "buku-besar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/buku-besars/:id",
+      "handler": "buku-besar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/buku-besars/:id",
+      "handler": "buku-besar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

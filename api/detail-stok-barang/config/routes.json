@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/detail-stok-barangs",
+      "handler": "detail-stok-barang.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/detail-stok-barangs/count",
+      "handler": "detail-stok-barang.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/detail-stok-barangs/:id",
+      "handler": "detail-stok-barang.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/detail-stok-barangs",
+      "handler": "detail-stok-barang.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/detail-stok-barangs/:id",
+      "handler": "detail-stok-barang.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/detail-stok-barangs/:id",
+      "handler": "detail-stok-barang.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

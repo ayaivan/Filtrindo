@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mutasi-stoks",
+      "handler": "mutasi-stok.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mutasi-stoks/count",
+      "handler": "mutasi-stok.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mutasi-stoks/:id",
+      "handler": "mutasi-stok.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mutasi-stoks",
+      "handler": "mutasi-stok.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mutasi-stoks/:id",
+      "handler": "mutasi-stok.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mutasi-stoks/:id",
+      "handler": "mutasi-stok.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

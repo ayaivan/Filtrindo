@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mutasi_stoks",
+  "info": {
+    "name": "Mutasi Stok"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "barangs": {
+      "collection": "barang",
+      "via": "mutasi_stoks",
+      "dominant": true
+    },
+    "Tanggal": {
+      "type": "date"
+    },
+    "Asal": {
+      "type": "string"
+    },
+    "Masuk": {
+      "type": "decimal"
+    },
+    "Keluar": {
+      "type": "decimal"
+    },
+    "Harga_Dolar": {
+      "type": "decimal"
+    },
+    "Harga_Rupiah": {
+      "type": "decimal"
+    },
+    "Kurs": {
+      "type": "decimal"
+    },
+    "gudangs": {
+      "collection": "gudang",
+      "via": "mutasi_stoks",
+      "dominant": true
+    },
+    "Surat": {
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    }
+  }
+}

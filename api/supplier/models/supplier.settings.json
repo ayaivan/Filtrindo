@@ -30,6 +30,10 @@
     "purchase_lpbs": {
       "via": "supplier",
       "collection": "purchase-lpb"
+    },
+    "buku_besars": {
+      "via": "suppliers",
+      "collection": "buku-besar"
     }
   }
 }

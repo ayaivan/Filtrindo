@@ -22,6 +22,10 @@
     },
     "hp": {
       "type": "string"
+    },
+    "buku_besars": {
+      "via": "customers",
+      "collection": "buku-besar"
     }
   }
 }

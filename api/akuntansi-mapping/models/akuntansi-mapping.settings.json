@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "akuntansi_mappings",
+  "info": {
+    "name": "Akuntansi Mapping"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nama": {
+      "type": "string"
+    },
+    "akunting": {
+      "model": "akunting",
+      "via": "akuntansi_mappings"
+    }
+  }
+}

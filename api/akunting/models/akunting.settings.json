@@ -28,6 +28,14 @@
     },
     "saldo": {
       "type": "integer"
+    },
+    "buku_besars": {
+      "via": "akuntings",
+      "collection": "buku-besar"
+    },
+    "akuntansi_mappings": {
+      "via": "akunting",
+      "collection": "akuntansi-mapping"
     }
   }
 }
