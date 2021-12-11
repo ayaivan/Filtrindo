@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "gudangs",
   "info": {
-    "name": "Gudang"
+    "name": "Gudang",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -30,6 +31,10 @@
     "detail_gudang": {
       "via": "gudangs",
       "model": "detail-stok-barang"
+    },
+    "akunting": {
+      "model": "akunting",
+      "via": "gudang"
     }
   }
 }

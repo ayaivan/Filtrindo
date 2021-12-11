@@ -16,8 +16,8 @@
       "via": "detail_gudang"
     },
     "gudangs": {
-      "collection": "gudang",
-      "via": "detail_gudang"
+      "via": "detail_gudang",
+      "collection": "gudang"
     },
     "Detail": {
       "type": "json"

@@ -36,6 +36,10 @@
     "akuntansi_mappings": {
       "via": "akunting",
       "collection": "akuntansi-mapping"
+    },
+    "gudang": {
+      "via": "akunting",
+      "model": "gudang"
     }
   }
 }

@@ -38,8 +38,8 @@
       "type": "decimal"
     },
     "gudangs": {
-      "collection": "gudang",
       "via": "mutasi_stoks",
+      "collection": "gudang",
       "dominant": true
     },
     "Surat": {
