@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/purchase-lpbs",
+      "handler": "purchase-lpb.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/purchase-lpbs/count",
+      "handler": "purchase-lpb.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/purchase-lpbs/:id",
+      "handler": "purchase-lpb.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/purchase-lpbs",
+      "handler": "purchase-lpb.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/purchase-lpbs/save-order",
+      "handler": "purchase-lpb.saveOrder",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/purchase-lpbs/:id",
+      "handler": "purchase-lpb.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/purchase-lpbs/:id",
+      "handler": "purchase-lpb.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

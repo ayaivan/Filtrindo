@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gudangs",
+  "info": {
+    "name": "Gudang"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kode": {
+      "type": "string"
+    },
+    "nama": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "hp": {
+      "type": "string"
+    }
+  }
+}

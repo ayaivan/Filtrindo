@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suppliers",
+  "info": {
+    "name": "Supplier"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "hp": {
+      "type": "string"
+    },
+    "h_purchase_orders": {
+      "via": "supplier",
+      "collection": "h-purchase-order"
+    },
+    "purchase_lpbs": {
+      "via": "supplier",
+      "collection": "purchase-lpb"
+    }
+  }
+}

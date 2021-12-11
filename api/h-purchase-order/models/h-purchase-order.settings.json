@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "h_purchase_orders",
+  "info": {
+    "name": "HPurchaseOrder",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nota": {
+      "type": "string"
+    },
+    "tanggal": {
+      "type": "date"
+    },
+    "supplier": {
+      "model": "supplier",
+      "via": "h_purchase_orders"
+    },
+    "barangs": {
+      "via": "h_purchase_orders",
+      "collection": "barang",
+      "dominant": true
+    },
+    "listOrder": {
+      "type": "json"
+    },
+    "status": {
+      "type": "string"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "updatedBy": {
+      "type": "string"
+    },
+    "isEmpty": {
+      "type": "boolean",
+      "default": false
+    },
+    "purchase_lpbs": {
+      "via": "h_purchase_orders",
+      "collection": "purchase-lpb"
+    }
+  }
+}

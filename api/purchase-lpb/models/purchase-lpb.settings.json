@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "purchase_lpbs",
+  "info": {
+    "name": "Purchase LPB",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nota": {
+      "type": "string"
+    },
+    "tanggal_lpb": {
+      "type": "date"
+    },
+    "kurs": {
+      "type": "integer"
+    },
+    "tanggal_supplier": {
+      "type": "date"
+    },
+    "surat_jalan": {
+      "type": "string"
+    },
+    "supplier": {
+      "model": "supplier",
+      "via": "purchase_lpbs"
+    },
+    "barangs": {
+      "collection": "barang",
+      "via": "purchase_lpbs",
+      "dominant": true
+    },
+    "order_list": {
+      "type": "json"
+    },
+    "h_purchase_orders": {
+      "collection": "h-purchase-order",
+      "via": "purchase_lpbs",
+      "dominant": true
+    }
+  }
+}

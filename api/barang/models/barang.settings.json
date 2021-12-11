@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "barangs",
+  "info": {
+    "name": "barang",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "kode": {
+      "type": "string"
+    },
+    "satuan": {
+      "type": "string"
+    },
+    "jenis": {
+      "type": "string"
+    },
+    "h_purchase_orders": {
+      "via": "barangs",
+      "collection": "h-purchase-order"
+    },
+    "harga_beli": {
+      "type": "integer"
+    },
+    "purchase_lpbs": {
+      "via": "barangs",
+      "collection": "purchase-lpb"
+    }
+  }
+}

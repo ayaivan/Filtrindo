@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/akuntings",
+      "handler": "akunting.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/akuntings/count",
+      "handler": "akunting.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/akuntings/:id",
+      "handler": "akunting.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/akuntings",
+      "handler": "akunting.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/akuntings/:id",
+      "handler": "akunting.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/akuntings/:id",
+      "handler": "akunting.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

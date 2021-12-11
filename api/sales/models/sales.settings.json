@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales",
+  "info": {
+    "name": "Sales"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kode": {
+      "type": "string"
+    },
+    "nama": {
+      "type": "string"
+    },
+    "ktp": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "hp": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    }
+  }
+}

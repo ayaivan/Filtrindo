@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/barangs",
+      "handler": "barang.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/barangs/count",
+      "handler": "barang.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/barangs/:id",
+      "handler": "barang.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/barangs",
+      "handler": "barang.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/barangs/:id",
+      "handler": "barang.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/barangs/:id",
+      "handler": "barang.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

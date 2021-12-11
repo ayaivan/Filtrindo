@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "akuntings",
+  "info": {
+    "name": "Akunting"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kode": {
+      "type": "string"
+    },
+    "nama": {
+      "type": "string"
+    },
+    "jenis": {
+      "type": "string"
+    },
+    "golongan": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "saldo": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gudangs",
+      "handler": "gudang.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gudangs/count",
+      "handler": "gudang.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gudangs/:id",
+      "handler": "gudang.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/gudangs",
+      "handler": "gudang.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gudangs/:id",
+      "handler": "gudang.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gudangs/:id",
+      "handler": "gudang.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

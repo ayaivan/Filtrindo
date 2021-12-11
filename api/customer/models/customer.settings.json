@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "Customer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "hp": {
+      "type": "string"
+    }
+  }
+}
