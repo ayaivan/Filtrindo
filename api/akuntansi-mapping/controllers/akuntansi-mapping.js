@@ -5,4 +5,9 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+  async create(ctx) {
+    const response = await strapi.services["akuntansi-mapping"].updateEntity(ctx.request.body.entity);
+    ctx.send(response)
+  }
+};

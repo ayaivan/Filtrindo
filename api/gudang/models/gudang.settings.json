@@ -24,17 +24,21 @@
     "hp": {
       "type": "string"
     },
-    "mutasi_stoks": {
-      "via": "gudangs",
-      "collection": "mutasi-stok"
-    },
-    "detail_gudang": {
-      "via": "gudangs",
-      "model": "detail-stok-barang"
-    },
     "akunting": {
       "model": "akunting",
       "via": "gudang"
+    },
+    "detail_gudangs": {
+      "via": "gudangs",
+      "collection": "detail-stok-barang"
+    },
+    "purchase_lpbs": {
+      "via": "gudang",
+      "collection": "purchase-lpb"
+    },
+    "mutasi_stoks": {
+      "via": "gudang",
+      "collection": "mutasi-stok"
     }
   }
 }

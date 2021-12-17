@@ -43,6 +43,16 @@
       "collection": "h-purchase-order",
       "via": "purchase_lpbs",
       "dominant": true
+    },
+    "gudang": {
+      "model": "gudang",
+      "via": "purchase_lpbs"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "updatedBy": {
+      "type": "string"
     }
   }
 }

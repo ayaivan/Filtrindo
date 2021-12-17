@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "mutasi_stoks",
   "info": {
-    "name": "Mutasi Stok"
+    "name": "Mutasi Stok",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,44 +12,42 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "barangs": {
-      "collection": "barang",
-      "via": "mutasi_stoks",
-      "dominant": true
+    "barang": {
+      "model": "barang",
+      "via": "mutasi_stoks"
     },
-    "Tanggal": {
+    "tanggal": {
       "type": "date"
     },
-    "Asal": {
+    "asal": {
       "type": "string"
     },
-    "Masuk": {
+    "masuk": {
       "type": "decimal"
     },
-    "Keluar": {
+    "keluar": {
       "type": "decimal"
     },
-    "Harga_Dolar": {
+    "hargaDolar": {
       "type": "decimal"
     },
-    "Harga_Rupiah": {
+    "hargaRupiah": {
       "type": "decimal"
     },
-    "Kurs": {
+    "kurs": {
       "type": "decimal"
     },
-    "gudangs": {
-      "via": "mutasi_stoks",
-      "collection": "gudang",
-      "dominant": true
+    "gudang": {
+      "model": "gudang",
+      "via": "mutasi_stoks"
     },
-    "Surat": {
+    "surat": {
       "type": "string"
     },
-    "CreatedBy": {
+    "createdBy": {
       "type": "string"
     },
-    "UpdatedBy": {
+    "updatedBy": {
       "type": "string"
     }
   }

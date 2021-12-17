@@ -29,10 +29,6 @@
     "saldo": {
       "type": "integer"
     },
-    "buku_besars": {
-      "via": "akuntings",
-      "collection": "buku-besar"
-    },
     "akuntansi_mappings": {
       "via": "akunting",
       "collection": "akuntansi-mapping"
@@ -40,6 +36,10 @@
     "gudang": {
       "via": "akunting",
       "model": "gudang"
+    },
+    "buku_besars": {
+      "via": "akunting",
+      "collection": "buku-besar"
     }
   }
 }

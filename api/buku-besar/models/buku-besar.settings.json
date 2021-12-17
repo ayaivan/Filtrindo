@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "buku_besars",
   "info": {
-    "name": "Buku Besar"
+    "name": "Buku Besar",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,46 +12,43 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "akuntings": {
-      "collection": "akunting",
-      "via": "buku_besars",
-      "dominant": true
+    "akunting": {
+      "model": "akunting",
+      "via": "buku_besars"
     },
-    "suppliers": {
-      "collection": "supplier",
-      "via": "buku_besars",
-      "dominant": true
+    "supplier": {
+      "model": "supplier",
+      "via": "buku_besars"
     },
-    "customers": {
-      "collection": "customer",
-      "via": "buku_besars",
-      "dominant": true
+    "customer": {
+      "model": "customer",
+      "via": "buku_besars"
     },
-    "Tanggal": {
+    "tanggal": {
       "type": "date"
     },
-    "Debet": {
+    "debet": {
       "type": "decimal"
     },
-    "Kredit": {
+    "kredit": {
       "type": "decimal"
     },
-    "Surat": {
+    "surat": {
       "type": "string"
     },
-    "Kode_Bank": {
+    "kode_bank": {
       "type": "string"
     },
-    "Jenis": {
+    "jenis": {
       "type": "string"
     },
-    "Keterangan": {
+    "keterangan": {
       "type": "string"
     },
-    "CreatedBy": {
+    "createdBy": {
       "type": "string"
     },
-    "UpdatedBy": {
+    "updatedBy": {
       "type": "string"
     }
   }

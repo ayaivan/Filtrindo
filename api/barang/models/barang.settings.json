@@ -35,13 +35,13 @@
       "via": "barangs",
       "collection": "purchase-lpb"
     },
-    "mutasi_stoks": {
-      "via": "barangs",
-      "collection": "mutasi-stok"
-    },
     "detail_gudang": {
       "via": "barang",
       "model": "detail-stok-barang"
+    },
+    "mutasi_stoks": {
+      "via": "barang",
+      "collection": "mutasi-stok"
     }
   }
 }

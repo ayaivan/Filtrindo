@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "detail_stok_barangs",
   "info": {
-    "name": "Detail Stok Barang"
+    "name": "Detail Stok Barang",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,10 +17,11 @@
       "via": "detail_gudang"
     },
     "gudangs": {
-      "via": "detail_gudang",
-      "collection": "gudang"
+      "via": "detail_gudangs",
+      "collection": "gudang",
+      "dominant": true
     },
-    "Detail": {
+    "detail": {
       "type": "json"
     }
   }

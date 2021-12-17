@@ -24,7 +24,7 @@
       "type": "string"
     },
     "buku_besars": {
-      "via": "customers",
+      "via": "customer",
       "collection": "buku-besar"
     }
   }
