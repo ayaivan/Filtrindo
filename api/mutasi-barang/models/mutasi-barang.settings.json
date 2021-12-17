@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mutasi_barangs",
+  "info": {
+    "name": "Mutasi Barang",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tanggal": {
+      "type": "date"
+    },
+    "asal": {
+      "type": "string"
+    },
+    "surat": {
+      "type": "string"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "updatedBy": {
+      "type": "string"
+    },
+    "barangs": {
+      "collection": "barang",
+      "via": "mutasi_barangs",
+      "dominant": true
+    },
+    "gudang": {
+      "model": "gudang",
+      "via": "mutasi_barangs"
+    },
+    "details": {
+      "type": "json"
+    },
+    "purchase_lpb": {
+      "model": "purchase-lpb",
+      "via": "mutasi_barang"
+    }
+  }
+}

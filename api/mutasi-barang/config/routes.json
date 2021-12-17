@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mutasi-barangs",
+      "handler": "mutasi-barang.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mutasi-barangs/count",
+      "handler": "mutasi-barang.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mutasi-barangs/:id",
+      "handler": "mutasi-barang.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mutasi-barangs",
+      "handler": "mutasi-barang.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mutasi-barangs/:id",
+      "handler": "mutasi-barang.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mutasi-barangs/:id",
+      "handler": "mutasi-barang.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

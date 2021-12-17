@@ -40,6 +40,10 @@
     "buku_besars": {
       "via": "akunting",
       "collection": "buku-besar"
+    },
+    "akunting_buku_besars": {
+      "via": "akuntings",
+      "collection": "akunting-buku-besar"
     }
   }
 }

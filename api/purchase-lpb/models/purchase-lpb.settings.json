@@ -53,6 +53,14 @@
     },
     "updatedBy": {
       "type": "string"
+    },
+    "mutasi_barang": {
+      "via": "purchase_lpb",
+      "model": "mutasi-barang"
+    },
+    "akunting_buku_besar": {
+      "via": "purchase_lpb",
+      "model": "akunting-buku-besar"
     }
   }
 }

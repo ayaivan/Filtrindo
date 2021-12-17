@@ -34,6 +34,10 @@
     "buku_besars": {
       "via": "supplier",
       "collection": "buku-besar"
+    },
+    "akunting_buku_besar": {
+      "via": "supplier",
+      "model": "akunting-buku-besar"
     }
   }
 }

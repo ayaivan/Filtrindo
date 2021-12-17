@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "akunting_buku_besars",
+  "info": {
+    "name": "Akunting Buku Besar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tanggal": {
+      "type": "date"
+    },
+    "surat": {
+      "type": "string"
+    },
+    "kode_bank": {
+      "type": "string"
+    },
+    "jenis": {
+      "type": "string"
+    },
+    "keterangan": {
+      "type": "string"
+    },
+    "createdBy": {
+      "type": "string"
+    },
+    "updatedBy": {
+      "type": "string"
+    },
+    "akuntings": {
+      "collection": "akunting",
+      "via": "akunting_buku_besars",
+      "dominant": true
+    },
+    "purchase_lpb": {
+      "model": "purchase-lpb",
+      "via": "akunting_buku_besar"
+    },
+    "supplier": {
+      "model": "supplier",
+      "via": "akunting_buku_besar"
+    },
+    "customer": {
+      "model": "customer",
+      "via": "akunting_buku_besar"
+    },
+    "details": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/akunting-buku-besars",
+      "handler": "akunting-buku-besar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/akunting-buku-besars/count",
+      "handler": "akunting-buku-besar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/akunting-buku-besars/:id",
+      "handler": "akunting-buku-besar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/akunting-buku-besars",
+      "handler": "akunting-buku-besar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/akunting-buku-besars/:id",
+      "handler": "akunting-buku-besar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/akunting-buku-besars/:id",
+      "handler": "akunting-buku-besar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

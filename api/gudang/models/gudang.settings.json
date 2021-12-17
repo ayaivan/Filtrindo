@@ -39,6 +39,10 @@
     "mutasi_stoks": {
       "via": "gudang",
       "collection": "mutasi-stok"
+    },
+    "mutasi_barangs": {
+      "via": "gudang",
+      "collection": "mutasi-barang"
     }
   }
 }
