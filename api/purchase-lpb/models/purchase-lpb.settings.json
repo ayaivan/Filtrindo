@@ -32,8 +32,8 @@
       "via": "purchase_lpbs"
     },
     "barangs": {
-      "collection": "barang",
       "via": "purchase_lpbs",
+      "collection": "barang",
       "dominant": true
     },
     "order_list": {

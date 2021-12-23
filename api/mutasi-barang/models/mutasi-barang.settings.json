@@ -28,8 +28,8 @@
       "type": "string"
     },
     "barangs": {
-      "collection": "barang",
       "via": "mutasi_barangs",
+      "collection": "barang",
       "dominant": true
     },
     "gudang": {

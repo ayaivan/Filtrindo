@@ -447,7 +447,6 @@ module.exports = {
   },
 
   async updateLPB(listOrder, headerLPB, purchase, mode) {
-    const updatedListOrder = [];
     const mutasiBarangDetails = [];
     const bukuBesarDetails = [];
 
@@ -512,6 +511,7 @@ module.exports = {
           { listOrder: listOrderPO.listOrder, isEmpty }
         );
       }
+
       // preparing detail for mutasi barang
       if (!order.isDeleted)
         mutasiBarangDetails.push({
@@ -536,35 +536,17 @@ module.exports = {
         { detail: objItem.detail }
       );
 
-      // preparing detail buku besar
-      if (!order.isDeleted) {
-        bukuBesarDetails.push({
-          entity_1: {
-            idAkunting: purchaseCode.id,
-            idBarang: order.item.id,
-            debet: order.item.harga_rupiah * order.item.jumlah,
-            kredit: 0,
-          },
-          entity_2: {
-            idAkunting: debtCode.id,
-            idBarang: order.item.id,
-            debet: 0,
-            kredit: order.item.harga_rupiah * order.item.jumlah,
-          },
-          entity_3: {
-            idAkunting: warehouseCode.id,
-            idBarang: order.item.id,
-            debet: order.item.harga_rupiah * order.item.jumlah,
-            kredit: 0,
-          },
-          entity_4: {
-            idAkunting: hppCode.id,
-            idBarang: order.item.id,
-            debet: 0,
-            kredit: order.item.harga_rupiah * order.item.jumlah,
-          },
-        });
-      }
+      // update item price on master
+      console.debug(order)
+      if (mode === "post")
+        await strapi.services["barang"].update(
+          { id: order.item.id },
+          {
+            harga_beli_dolar: order.item.harga_dolar,
+            harga_beli_rupiah: order.item.harga_rupiah,
+            kurs: headerLPB.kurs,
+          }
+        );
     }
     // mutasi stok
     const payLoadMutasi = {
@@ -588,6 +570,26 @@ module.exports = {
       await strapi.services["mutasi-barang"].create(payLoadMutasi);
 
     // buku besar
+    bukuBesarDetails.push({
+      idAkunting: purchaseCode.id,
+      debet: headerLPB.totalLPB,
+      kredit: 0,
+    });
+    bukuBesarDetails.push({
+      idAkunting: debtCode.id,
+      debet: 0,
+      kredit: headerLPB.totalLPB,
+    });
+    bukuBesarDetails.push({
+      idAkunting: warehouseCode.id,
+      debet: headerLPB.totalLPB,
+      kredit: 0,
+    });
+    bukuBesarDetails.push({
+      idAkunting: hppCode.id,
+      debet: 0,
+      kredit: headerLPB.totalLPB,
+    });
     const payLoadBukuBesar = {
       tanggal: headerLPB.tanggal_lpb,
       surat: headerLPB.nota,

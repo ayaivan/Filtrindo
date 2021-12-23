@@ -13,8 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "barang": {
-      "model": "barang",
-      "via": "mutasi_stoks"
+      "via": "mutasi_stoks",
+      "model": "barang"
     },
     "tanggal": {
       "type": "date"

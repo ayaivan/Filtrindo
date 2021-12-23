@@ -28,8 +28,8 @@
       "via": "barangs",
       "collection": "h-purchase-order"
     },
-    "harga_beli": {
-      "type": "integer"
+    "harga_beli_dolar": {
+      "type": "float"
     },
     "purchase_lpbs": {
       "via": "barangs",
@@ -46,6 +46,12 @@
     "mutasi_barangs": {
       "via": "barangs",
       "collection": "mutasi-barang"
+    },
+    "harga_beli_rupiah": {
+      "type": "float"
+    },
+    "kurs": {
+      "type": "float"
     }
   }
 }

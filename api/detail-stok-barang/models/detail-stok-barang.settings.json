@@ -13,8 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "barang": {
-      "model": "barang",
-      "via": "detail_gudang"
+      "via": "detail_gudang",
+      "model": "barang"
     },
     "gudangs": {
       "via": "detail_gudangs",
